@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
+import { bg2 } from "../constants";
+
 
 const Landing = () => {
   return (
     <div className="flex justify-center items-center w-full">
       <div className="fixed inset-0 bg-green-950">
         <img
-          src="/assets/sprites/main_menu_background.png"
+          src={bg2}
           alt=""
           className="w-full h-full"
         />
