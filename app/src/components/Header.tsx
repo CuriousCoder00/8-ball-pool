@@ -1,4 +1,27 @@
 import { Link } from "react-router-dom";
+import { redBall, yellowBall } from "../constants";
+const RedBalls = () => {
+  return (
+    <div className="flex gap-2">
+      <img src={redBall} alt="redBall" className="w-8 h-8" />
+      <img src={redBall} alt="redBall" className="w-8 h-8" />
+      <img src={redBall} alt="redBall" className="w-8 h-8" />
+      <img src={redBall} alt="redBall" className="w-8 h-8" />
+      <img src={redBall} alt="redBall" className="w-8 h-8" />
+    </div>
+  );
+};
+const YellowBalls = () => {
+  return (
+    <div className="flex gap-2">
+      <img src={yellowBall} alt="yellowBall" className="w-8 h-8" />
+      <img src={yellowBall} alt="yellowBall" className="w-8 h-8" />
+      <img src={yellowBall} alt="yellowBall" className="w-8 h-8" />
+      <img src={yellowBall} alt="yellowBall" className="w-8 h-8" />
+      <img src={yellowBall} alt="yellowBall" className="w-8 h-8" />
+    </div>
+  );
+};
 
 const Header = () => {
   return (
@@ -8,9 +31,15 @@ const Header = () => {
       </Link>
 
       <div className="flex items-center justify-center gap-3">
-        <span className="border-2 border-white hover:border-green-500 px-3 py-1 rounded-lg">player1</span>
+        <RedBalls />
+        <span className="border-2 border-white hover:border-green-500 px-3 py-1 rounded-lg">
+          player1
+        </span>
         <span>vs</span>
-        <span className="border-2 border-white hover:border-green-500 px-3 py-1 rounded-lg">player2</span>
+        <span className="border-2 border-white hover:border-green-500 px-3 py-1 rounded-lg">
+          player2
+        </span>
+        <YellowBalls />
       </div>
 
       <div className="flex gap-3">
