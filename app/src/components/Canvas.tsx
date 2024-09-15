@@ -33,7 +33,7 @@ const Canvas2D: React.FC = () => {
     const gameCanvas = canvasRef.current;
     if (!gameCanvas) return;
     gameCanvas.width = 1530;
-    gameCanvas.height = 650;
+    gameCanvas.height = 640;
 
     const gameCanvasContext = gameCanvas.getContext("2d");
     if (!gameCanvasContext) return;
